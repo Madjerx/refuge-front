@@ -1,10 +1,13 @@
 .header {
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+}
+
+.logo {
+  max-height: 50px;
 }
 
 .nav {
@@ -52,11 +55,19 @@
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
+
+.bx {
+  margin: 0.3rem 0;
+}
 /* responsive */
 @media screen and (max-width: 768px) {
+  .toggle__mobile__menu {
+    font-size: 1.5rem;
+  }
   .header {
+    position: fixed;
     top: initial;
-    bottom: 0;
+    top: 0;
   }
 
   .nav {
@@ -65,20 +76,20 @@
 
   .nav__menu {
     position: fixed;
-    bottom: -100%;
+    top: -100%;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
+    padding: 4rem 1.5rem 2rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 1.5rem 1.5rem;
-    transition: 0.3s;
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: 0.25s;
   }
 
   /* activate menu */
 
   .show-menu {
-    bottom: 0;
+    top: 0;
   }
 
   .nav__list {
@@ -94,7 +105,7 @@
   .nav__close {
     position: absolute;
     right: 1.3rem;
-    bottom: 0.5rem;
+    top: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--title-color);
