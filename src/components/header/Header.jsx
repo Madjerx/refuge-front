@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/va_logo.png";
 
 const Header = () => {
@@ -24,52 +24,52 @@ const Header = () => {
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className={path === "/" ? "nav__link active-link" : "nav__link"}
               >
                 <i className="uil uil-estate nav__icon"></i>Le Refuge
-              </a>
+              </Link>
             </li>
             {/* <li className="nav__item">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className={
                   path === "/#" ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="uil uil-house-user nav__icon"></i> Le Refuge
-              </a>
+              </Link>
             </li> */}
             <li className="nav__item">
-              <a
-                href="/nos-animaux-au-refuge"
+              <Link
+                to="/nos-animaux-au-refuge"
                 className={
                   path === "/nos-animaux-au-refuge" ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="bx bxs-cat bx-tada nav__icon"></i>Nos Animaux
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a
-                href="/aider-notre-association"
+              <Link
+                to="/aider-notre-association"
                 className={
                   path === "/aider-notre-association" ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="bx bx-donate-heart nav__icon"></i> Nous Aider
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className={
                   path === "/contact" ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="uil uil-chat nav__icon"></i> Contact
-              </a>
+              </Link>
             </li>
           </ul>
           <i
