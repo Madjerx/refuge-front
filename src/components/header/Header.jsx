@@ -19,16 +19,17 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        {/* <span className="nav__logo">Logo</span> */}
-        <img className="logo" src={Logo} alt="Vie Animale Logo" />
+        <span className="nav__logo">Vie Animale</span>
+        {/* <img className="logo" src={Logo} alt="Vie Animale Logo" /> */}
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
               <Link
                 to="/"
+                onClick={() => showMenu(false)}
                 className={path === "/" ? "nav__link active-link" : "nav__link"}
               >
-                <i className="uil uil-estate nav__icon"></i>Le Refuge
+                <i className="bx bxs-home nav__icon"></i>Le Refuge
               </Link>
             </li>
             {/* <li className="nav__item">
@@ -43,9 +44,12 @@ const Header = () => {
             </li> */}
             <li className="nav__item">
               <Link
+                onClick={() => showMenu(false)}
                 to="/nos-animaux-au-refuge"
                 className={
-                  path === "/nos-animaux-au-refuge" ? "nav__link active-link" : "nav__link"
+                  path === "/nos-animaux-au-refuge"
+                    ? "nav__link active-link"
+                    : "nav__link"
                 }
               >
                 <i className="bx bxs-cat bx-tada nav__icon"></i>Nos Animaux
@@ -53,22 +57,26 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <Link
+                onClick={() => showMenu(false)}
                 to="/aider-notre-association"
                 className={
-                  path === "/aider-notre-association" ? "nav__link active-link" : "nav__link"
+                  path === "/aider-notre-association"
+                    ? "nav__link active-link"
+                    : "nav__link"
                 }
               >
-                <i className="bx bx-donate-heart nav__icon"></i> Nous Aider
+                <i className="bx bxs-donate-heart nav__icon"></i> Nous Aider
               </Link>
             </li>
             <li className="nav__item">
               <Link
+                onClick={() => showMenu(false)}
                 to="/contact"
                 className={
                   path === "/contact" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-chat nav__icon"></i> Contact
+                <i className="bx bxs-chat nav__icon"></i> Contact
               </Link>
             </li>
           </ul>

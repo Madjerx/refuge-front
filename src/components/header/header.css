@@ -62,7 +62,7 @@
 /* responsive */
 @media screen and (max-width: 768px) {
   .toggle__mobile__menu {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .header {
     position: fixed;
@@ -83,7 +83,7 @@
     padding: 4rem 1.5rem 2rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 0 0 1.5rem 1.5rem;
-    transition: 0.25s;
+    /* transition: 0.3s; */
   }
 
   /* activate menu */
@@ -106,7 +106,7 @@
     position: absolute;
     right: 1.3rem;
     top: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     cursor: pointer;
     color: var(--title-color);
   }
