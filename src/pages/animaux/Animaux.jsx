@@ -1,11 +1,11 @@
 import React from 'react'
 
-const NotFound = () => {
+const Animaux = () => {
   return (
     <div className="page__container container">
-      <h1>NotFound</h1>
+      <h1>Animaux</h1>
     </div>
   )
 }
 
-export default NotFound
+export default Animaux

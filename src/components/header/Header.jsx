@@ -20,7 +20,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         {/* <span className="nav__logo">Logo</span> */}
-        <img className="logo" src={Logo} alt="Vie Animale Logo"/>
+        <img className="logo" src={Logo} alt="Vie Animale Logo" />
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -28,10 +28,10 @@ const Header = () => {
                 href="/"
                 className={path === "/" ? "nav__link active-link" : "nav__link"}
               >
-                <i className="uil uil-estate nav__icon"></i> Accueil
+                <i className="uil uil-estate nav__icon"></i>Le Refuge
               </a>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a
                 href="/"
                 className={
@@ -40,12 +40,12 @@ const Header = () => {
               >
                 <i className="uil uil-house-user nav__icon"></i> Le Refuge
               </a>
-            </li>
+            </li> */}
             <li className="nav__item">
               <a
-                href="/"
+                href="/nos-animaux-au-refuge"
                 className={
-                  path === "/#" ? "nav__link active-link" : "nav__link"
+                  path === "/nos-animaux-au-refuge" ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="bx bxs-cat bx-tada nav__icon"></i>Nos Animaux
@@ -53,12 +53,12 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="/"
+                href="/aider-notre-association"
                 className={
-                  path === "/#" ? "nav__link active-link" : "nav__link"
+                  path === "/aider-notre-association" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="bx bx-donate-heart nav__icon"></i> Nous aider
+                <i className="bx bx-donate-heart nav__icon"></i> Nous Aider
               </a>
             </li>
             <li className="nav__item">

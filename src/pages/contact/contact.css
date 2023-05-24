@@ -1,0 +1,22 @@
+.icon_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.contact_icon {
+  background-color: var(--primary-accent-color);
+  color: var(--container-color);
+  font-size: var(--h2-font-size);
+  border-radius: 100%;
+  padding: 0.5rem 0.8rem;
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .icon_section {
+    margin-top: 2rem;
+  }
+}
