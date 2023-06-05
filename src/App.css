@@ -138,6 +138,9 @@ img {
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-2);
 }
+.pointer {
+  cursor: pointer;
+}
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 968px;
